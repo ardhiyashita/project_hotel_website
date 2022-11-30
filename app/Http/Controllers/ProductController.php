@@ -18,10 +18,8 @@ class ProductController extends Controller
 
     public function produk_list(Request $request){
 
-        $produk = Product::orderBy('id', 'DESC')->get();
-        // $produk = Product::all()->toJson();
-        // return response()->json($produk);
-        return view('produk.list', compact('produk'));
+       
+        return view('produk.list');
     }
 
     public function produk_block(){

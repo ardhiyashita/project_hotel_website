@@ -39,11 +39,11 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
                     <a class="fa fa-bars" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
                     
                     <div class="ml-3 text-lg font-weight-bold text-primary text-uppercase mb-1">
-                        Aplikasi Administrasi - Hotel - LMS</div>
+                        Website Hotel</div>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">

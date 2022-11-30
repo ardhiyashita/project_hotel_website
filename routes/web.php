@@ -33,19 +33,7 @@ Route::group(['middleware' => 'auth'], function() {
             return view('welcome');
         });
 
-        //Satuan
-        Route::group(['prefix' => 'satuan'], function() {
-            Route::get('/', [SatuanController::class, 'index'])->name('satuan.index');
-
-            Route::get('/add', [SatuanController::class, 'add'])->name('satuan.add');
-            Route::post('/add', [SatuanController::class, 'addSave'])->name('satuan.add.save');
-
-            Route::get('/edit/{id}', [SatuanController::class, 'edit'])->name('satuan.edit');
-            Route::post('/edit/{id}',[SatuanController::class, 'editSave'])->name('satuan.edit.save');
-
-            Route::post('/delete/{id}',[SatuanController::class, 'delete'])->name('satuan.delete');
-        });
-
+    
         //user
         Route::group(['prefix' => 'user'], function() {
             Route::get('/', [UserController::class, 'index'])->name('user.index');
@@ -59,21 +47,35 @@ Route::group(['middleware' => 'auth'], function() {
             Route::post('/delete/{id}',[UserController::class, 'delete'])->name('user.delete');
         });
 
-        //Kategori
-        Route::group(['prefix' => 'kategori'], function() {
-            Route::get('/', [KategoriProdukController::class, 'index'])->name('kategori.index');
-            Route::get('/add', [KategoriProdukController::class, 'add'])->name('kategori.add');
-            Route::post('/add', [KategoriProdukController::class, 'addSave'])->name('kategori.add.save');
-            Route::get('/edit/{id}', [KategoriProdukController::class, 'edit'])->name('kategori.edit');
-            Route::post('/edit/{id}',[KategoriProdukController::class, 'editSave'])->name('kategori.edit.save');
-            Route::post('/delete/{id}',[KategoriProdukController::class, 'delete'])->name('kategori.delete');
-        });
-
     });
 
     Route::get('/welcome', function () {
         return view('welcome');
     });
+
+
+
+
+
+
+
+
+
+    Route::group(['prefix' => 'hotel_transaction'], function() {
+
+        Route::get('/list', 'HotelTransactionController@list')->name('hotel_transaction_list');
+        Route::get('/add', 'HotelTransactionController@add')->name('hotel_transaction_add');
+        Route::post('/save_add', 'HotelTransactionController@save_add')->name('hotel_transaction_save_add');
+        
+    });
+
+
+
+
+
+
+
+
 
     Route::group(['prefix' => 'product'], function() {
         /* ---- DASHBOARD ---- */

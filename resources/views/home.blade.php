@@ -13,14 +13,14 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Total Hotel Transaction</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">--</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     <div class="mt-2" style="display: inline-block; text-align: right; width: 100%">
-                        <a href="" class="text-xs font-weight-bold text-uppercase text-primary">More Info >></a>
+                        <a href="{{ route('hotel_transaction_list') }}" class="text-xs font-weight-bold text-uppercase text-primary">More Info >></a>
                     </div>
                 </div>
             </div>
@@ -34,14 +34,14 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Clean Linen</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">--</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     <div class="mt-2" style="display: inline-block; text-align: right; width: 100%">
-                        <a href="" class="text-xs font-weight-bold text-uppercase text-success">More Info >></a>
+                        <a href="{{ route('hotel_transaction_list') }}" class="text-xs font-weight-bold text-uppercase text-success">More Info >></a>
                     </div>
                 </div>
             </div>
@@ -55,14 +55,14 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                 Linen Aging</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $total_stok }}</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     <div class="mt-2" style="display: inline-block; text-align: right; width: 100%">
-                        <a href="" class="text-xs font-weight-bold text-uppercase text-danger">More Info >></a>
+                        <a href="{{ route('hotel_transaction_list') }}" class="text-xs font-weight-bold text-uppercase text-danger">More Info >></a>
                     </div>
                 </div>
             </div>
@@ -76,14 +76,14 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 Discard Linen</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $total_user }}</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-comments fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     <div class="mt-2" style="display: inline-block; text-align: right; width: 100%">
-                        <a href="" class="text-xs font-weight-bold text-uppercase text-warning">More Info >></a>
+                        <a href="{{ route('hotel_transaction_list') }}" class="text-xs font-weight-bold text-uppercase text-warning">More Info >></a>
                     </div>
                 </div>
             </div>
@@ -94,16 +94,16 @@
                 <div class="card-body" style="padding-bottom: 0">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
                                 Linen to Receive</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $total_user }}</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                         </div>
                         <div class="col-auto">
                             <i class="fas fa-comments fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     <div class="mt-2" style="display: inline-block; text-align: right; width: 100%">
-                        <a href="" class="text-xs font-weight-bold text-uppercase text-secondary">More Info >></a>
+                        <a href="{{ route('hotel_transaction_list') }}" class="text-xs font-weight-bold text-uppercase text-secondary">More Info >></a>
                     </div>
                 </div>
             </div>

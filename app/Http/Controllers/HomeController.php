@@ -27,13 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $total_harga_beli = Product::query()->sum(\DB::raw('stok * harga_beli'));
-        $total_penjualan_jual = PenjualanDetail::query()->sum(\DB::raw('qty * harga_jual'));
-        $total_penjualan_beli = PenjualanDetail::query()->sum(\DB::raw('qty * harga_beli'));
-        $total_keuntungan = $total_penjualan_jual - $total_penjualan_beli;
-        $total_stok = Product::query()->sum('stok');
-        $total_user = User::query()->count();
-        return view('home', compact('total_harga_beli', 'total_keuntungan', 'total_stok', 'total_user'));
+        return view('home');
     }
 
     public function getDataPenjualan()

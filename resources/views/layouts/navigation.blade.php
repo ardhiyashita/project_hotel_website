@@ -27,19 +27,19 @@
 
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produk-list') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Linen to Receive</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produk-list') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Hotel Transaction</span></a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produk-list') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Discard Linen</span></a>
                 </li>
@@ -53,21 +53,21 @@
                     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Stock:</h6>
-                            <a class="collapse-item" href="{{ route('satuan.index') }}">Satuan</a>
-                            <a class="collapse-item" href="#">Supplier</a>
-                            <a class="collapse-item" href="{{ route('kategori.index') }}">Kategori Produk</a>
+                            <a class="collapse-item" href="">Satuan</a>
+                            <a class="collapse-item" href="">Supplier</a>
+                            <a class="collapse-item" href="">Kategori Produk</a>
                         </div>
                     </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produk-list') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Billing</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produk-list') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-table"></i>
                         <span>Report</span></a>
                 </li>
@@ -82,9 +82,9 @@
                     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Master Data:</h6>
-                            <a class="collapse-item" href="{{ route('satuan.index') }}">Satuan</a>
-                            <a class="collapse-item" href="#">Supplier</a>
-                            <a class="collapse-item" href="{{ route('kategori.index') }}">Kategori Produk</a>
+                            <a class="collapse-item" href="">Satuan</a>
+                            <a class="collapse-item" href="">Supplier</a>
+                            <a class="collapse-item" href="">Kategori Produk</a>
                         </div>
                     </div>
                 </li> -->
@@ -95,7 +95,7 @@
 
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('user.index') }}">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-chart-area"></i>
                         <span>User Management</span></a>
                 </li>
