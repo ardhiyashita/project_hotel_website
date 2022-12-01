@@ -1,6 +1,6 @@
 @extends('layouts/master')
 
-@section('title', 'Produk List')
+@section('title', 'Transaction List')
 
 @section('heading')
     
@@ -52,18 +52,18 @@
                             </tr>
                         </tfoot>
                         <tbody>
-                            
+                        @foreach($list as $item)
                             <tr>
-                                <td><input type="checkbox" class="cb_child" value=""></td>
-                                <td>1.</td>
-                                <td>MBL-1665647682101</td>
-                                <td>Oct, 13 2022 03:54:42 PM</td>
-                                <td>7</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>Upload Clean</td>
-                                <td>-</td>
+                                <td><input type="checkbox" class="cb_child" value="{{ $item->id }}"></td>
+                                <td>{{ $loop->index + 1}}</td>
+                                <td>{{ $item->train_code }}</td>
+                                <td>{{ $item->train_date }}</td>
+                                <td>{{ $item->clean }}</td>
+                                <td>{{ $item->soil }}</td>
+                                <td>{{ $item->stain }}</td>
+                                <td>{{ $item->torn }}</td>
+                                <td>{{ $item->train_status }}</td>
+                                <td>{{ $item->delivery_status }}</td>
                                 <td width="160px">
                                     <form action="" method="POST">
                                         <div class="" role="group" aria-label="Basic example">
@@ -75,7 +75,7 @@
                                     </form>
                                 </td>
                             </tr>
-                            
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

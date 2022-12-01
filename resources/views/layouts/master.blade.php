@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title>Penjualan @yield('title')</title>
+    <title>Hotel @yield('title')</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('assets/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
