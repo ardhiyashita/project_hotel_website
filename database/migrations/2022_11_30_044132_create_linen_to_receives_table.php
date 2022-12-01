@@ -23,6 +23,7 @@ class CreateLinenToReceivesTable extends Migration
             $table->integer('total');
             $table->string('status');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
