@@ -24,7 +24,6 @@ class CreateHotelTransactionsTable extends Migration
             $table->string('train_status');
             $table->string('delivery_status');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

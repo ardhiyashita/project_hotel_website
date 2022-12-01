@@ -10,8 +10,7 @@ class HotelTransactionController extends Controller
     
     public function list(Type $var = null)
     {
-        $list = HotelTransaction::all();
-        return view('hotel_transaction.list', compact('list'));
+        return view('hotel_transaction.list');
     }
 
     public function add(Type $var = null)
@@ -22,25 +21,25 @@ class HotelTransactionController extends Controller
     public function save_add(Request $request){
 
         $request->validate([
-        'train_code' => 'required',
-        'train_date' => 'required',
-        'clean' => 'required',
-        'soil' => 'required',
-        'stain' => 'required',
-        'torn' => 'required',
-        'train_status' => 'required',
-        'delivery_status' => 'required',
+        'satuan' => 'required',
+        'supplier' => 'required',
+        'kategori' => 'required',
+        'kode' => 'required',
+        'nama' => 'required',
+        'stok' => 'required',
+        'beli' => 'required',
+        'jual' => 'required',
         ]);
 
         HotelTransaction::create([
-            'train_code' => $request->train_code,
-            'train_date' => $request->train_date,
-            'clean' => $request->clean,
-            'soil' => $request->soil,
-            'stain' => $request->stain,
-            'torn' => $request->torn,
-            'train_status' => $request->train_status,
-            'delivery_status' => $request->delivery_status,
+            'satuan_id' => $request->satuan,
+            'supplier_id' => $request->supplier,
+            'category_id' => $request->kategori,
+            'kode' => $request->kode,
+            'nama_barang' => $request->nama,
+            'stok' => $request->stok,
+            'harga_beli' => $request->beli,
+            'harga_jual' => $request->jual,
         ]);
 
         return redirect()->route('hotel_transaction_list');

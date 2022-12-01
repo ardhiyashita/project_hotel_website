@@ -1,6 +1,6 @@
 @extends('layouts/master')
 
-@section('title', 'Add')
+@section('title', 'Tambah Produk')
 
 @section('heading')
     
@@ -9,7 +9,7 @@
 @section('content')
 
 <!-- Page Heading -->
-<form action="{{ route('hotel_transaction_save_add') }}" method="POST" enctype="multipart/form-data">
+<form action="{{ route('produk-savetambah') }}" method="POST" enctype="multipart/form-data">
 @csrf
 
 <div class="row" style="display: flex; justify-content: center;">
